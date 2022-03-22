@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context=".MainActivity"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/purple_200"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#FF9800"
+        android:text="SỐ HỌC ĐƠN GIẢN"
+        android:textAlignment="center"
+        android:textColor="#FAF6F6"
+        android:textSize="32dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="số A"
+            android:textSize="16dp"
+            android:textColor="@color/white"
+            android:id="@+id/tvsoA"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtA"
+            />
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="số A"
+            android:textSize="16dp"
+            android:textColor="@color/white"
+            android:id="@+id/tvsoB"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtB"
+            />
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#BF961D"
+            android:onClick="XuLy_Cong"
+            android:text="+" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:id="@+id/btnSub"
+            android:onClick="XuLy_Tru"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:id="@+id/btnMul"
+            android:onClick="XuLy_Nhan"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/"
+            android:id="@+id/btnDiv"
+            android:onClick="XuLy_Chia"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tvKetQua"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:text="Kết quả hiện ở đây"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="24dp" />
+
+</LinearLayout>
+</LinearLayout>
